@@ -5,15 +5,9 @@ import '../index.css';
 const Department = () => {
     return (
         <div style={{ paddingBottom: '80px' }}>
-            <div className="subpage-header" style={{
-                background: 'linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%)',
-                color: 'white',
-                padding: '80px 0',
-                textAlign: 'center',
-                marginBottom: '60px'
-            }}>
+            <div className="subpage-header">
                 <div className="container">
-                    <h1 style={{ fontSize: '3rem', margin: 0 }}>Department of ECE</h1>
+                    <h1 style={{ fontSize: '3rem', margin: 0 }}>Department of Electronics and Communication Engineering</h1>
                 </div>
             </div>
 
@@ -40,10 +34,8 @@ const Department = () => {
                         border: '1px solid #f0f0f0'
                     }}>
                         <p style={{
-                            fontSize: '1.15rem',
                             lineHeight: '1.9',
                             color: '#444',
-                            textAlign: 'justify',
                             margin: 0
                         }}>
                             The Department of Electronics & Communication Engineering was established at T. John Institute of Technology in 2006. Since its inception, the department has grown meteorically. The department seeks to excel as a technology hub processing research and educating Students in current technological developments. It is equipped with the state-of-the-art infrastructure and supported by a team of dedicated and qualified Staff members. Our department's Faculty members bring state-of-the-art Research, Development, and design experience into the classroom, ensuring that our Students are able to apply and recognize as Professional Engineers in all parts of the global engineering and technical community.
@@ -60,17 +52,22 @@ const Department = () => {
 
                     <div className="vm-box">
                         <h3>Department Mission</h3>
-                        <ul className="mission-list">
-                            {departmentMission.map((point, index) => (
-                                <li key={index}>{point}</li>
-                            ))}
+                        <ul style={{ listStyle: 'none', padding: 0 }}>
+                            {departmentMission.map((point, index) => {
+                                const [marker, ...rest] = point.split(':');
+                                return (
+                                    <li key={index} style={{ marginBottom: '15px' }}>
+                                        <strong>{marker}:</strong> {rest.join(':')}
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </div>
 
-                <div style={{ marginTop: '80px' }}>
+                <div style={{ marginTop: '40px' }}>
                     <div className="section-title">Faculty Members</div>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '30px', textAlign: 'center' }}>
+                    <div className="responsive-grid" style={{ textAlign: 'center', gap: '60px' }}>
                         {faculty.map((member, index) => (
                             <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <div style={{
@@ -134,7 +131,7 @@ const Department = () => {
                                     </div>
                                 </div>
                                 <h3 style={{ marginBottom: '5px', color: 'var(--primary-blue)', fontSize: '1.15rem', fontWeight: '700' }}>{member.name}</h3>
-                                <p style={{ color: 'var(--text-gray)', fontStyle: 'italic', fontWeight: '500', fontSize: '0.95rem' }}>{member.designation}</p>
+                                <p style={{ color: 'var(--text-gray)', fontStyle: 'italic', fontWeight: '500' }}>{member.designation}</p>
                             </div>
                         ))}
                     </div>

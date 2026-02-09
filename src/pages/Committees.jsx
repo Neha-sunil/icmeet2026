@@ -5,14 +5,13 @@ import '../index.css';
 const Committees = () => {
     return (
         <div style={{ paddingBottom: '80px' }}>
+            <div className="subpage-header">
+                <div className="container">
+                    <h1>Organizing Committees</h1>
+                </div>
+            </div>
             <div className="container">
-
-                <h2 className="section-title">Organizing Committees</h2>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                    gap: '40px'
-                }}>
+                <div className="responsive-grid">
                     {committees.map((committee) => (
                         <div key={committee.id} style={{
                             padding: '30px',

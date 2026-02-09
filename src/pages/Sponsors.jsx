@@ -16,7 +16,7 @@ const Sponsors = () => {
                     fontSize: '1.2rem',
                     textAlign: 'center',
                     maxWidth: '900px',
-                    margin: '0 auto 60px',
+                    margin: '0 auto 30px',
                     color: '#555',
                     lineHeight: '1.8'
                 }}>
@@ -24,11 +24,7 @@ const Sponsors = () => {
                     Their partnership strengthens research, innovation, and academic collaboration.
                 </p>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                    gap: '40px'
-                }}>
+                <div className="responsive-grid">
                     {sponsors.map((sponsor, index) => (
                         <div key={index} className="card" style={{
                             textAlign: 'center',
@@ -39,22 +35,18 @@ const Sponsors = () => {
                         }}>
                             <div style={{
                                 width: '100%',
-                                height: '180px',
-                                backgroundColor: '#f9f9f9',
-                                borderRadius: '12px',
+                                height: '150px',
                                 marginBottom: '25px',
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                border: '1px dashed #ccc',
-                                color: '#aaa',
                                 overflow: 'hidden'
                             }}>
                                 {sponsor.logo ? (
-                                    <img src={sponsor.logo} alt={sponsor.name} style={{ maxWidth: '80%', maxHeight: '80%', objectFit: 'contain' }} />
+                                    <img src={sponsor.logo} alt={sponsor.name} style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }} />
                                 ) : (
-                                    <div style={{ textAlign: 'center' }}>
-                                        <div style={{ fontSize: '2rem', marginBottom: '10px' }}>🏢</div>
+                                    <div style={{ textAlign: 'center', color: '#ccc' }}>
+                                        <div style={{ fontSize: '3rem', marginBottom: '10px' }}>🏢</div>
                                         <div style={{ fontSize: '0.9rem', fontWeight: '500' }}>Logo Placeholder</div>
                                     </div>
                                 )}

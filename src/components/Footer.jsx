@@ -10,38 +10,46 @@ const Footer = () => {
             <div className="container footer-content">
                 <div className="footer-section">
                     <h3>IC-MEET 2026</h3>
-                    <p>International Conference on Recent Trends in Materials, Engineering and Emerging Technology.</p>
+                    <p style={{ lineHeight: '1.6' }}>International Conference on Recent Trends in Materials, Engineering and Emerging Technology.</p>
                 </div>
                 <div className="footer-section">
                     <h3>Contact</h3>
-                    <p>Department of ECE <br /> T. John Institute of Technology</p>
-                    <div style={{ marginTop: '10px' }}>
-                        <a href="mailto:tjitecemeet@outlook.com" style={{ display: 'block' }}>tjitecemeet@outlook.com</a>
-                        <a href="tel:+919876543210" style={{ display: 'block' }}>+91 9876543210</a>
-                    </div>
+                    <p style={{ marginBottom: '15px' }}>
+                        Department of Electronics and Communication Engineering <br />
+                        T. John Institute of Technology
+                    </p>
+                    <a href="mailto:tjitecemeet@outlook.com">tjitecemeet@outlook.com</a>
                 </div>
                 <div className="footer-section">
                     <h3>Quick Links</h3>
                     <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/committees">Committees</a>
                     <a href="/department">Department</a>
+                    <a href="/about">IC-MEET 2026</a>
+                    <a href="/committees">Committees</a>
+                    <a href="/call-for-papers">Call For Papers</a>
                     <a href="/sponsors">Sponsors</a>
                 </div>
                 <div className="footer-section">
                     <h3>Our Sponsors</h3>
                     <div style={{
                         display: 'flex',
-                        flexDirection: 'row',
+                        flexDirection: 'column',
                         gap: '15px',
-                        alignItems: 'center',
-                        justifyContent: 'flex-start',
-                        marginTop: '15px',
-                        flexWrap: 'nowrap'
+                        marginTop: '10px',
+                        alignItems: 'center'
                     }}>
-                        <img src={sponsorSMPImg} alt="SMP" style={{ height: '40px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 1 }} />
-                        <img src={sponsorSamsonImg} alt="Samson Pharma" style={{ height: '40px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 1 }} />
-                        <img src={sponsorSANImg} alt="SAN International" style={{ height: '40px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 1 }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <img src={sponsorSMPImg} alt="SMP" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>SMP</span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <img src={sponsorSamsonImg} alt="Samson Pharma" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>Samson Pharma</span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <img src={sponsorSANImg} alt="SAN International" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>SAN International</span>
+                        </div>
                     </div>
                 </div>
             </div>

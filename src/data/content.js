@@ -81,7 +81,7 @@ export const committees = [
     {
         id: 7,
         name: "Photography and Video Committee",
-        coordinators: ["Dr. Rene Dev (Asso. Professor, ECE)"],
+        coordinators: ["Dr. Rene Dev (Asso. Professor, ECE)", "Dr. V Manjunath (Prof., ECE)"],
         responsibilities: [
             "Captures photos and videos of conference proceedings, keynote speeches, Geo tagged Photos and other activities for documentation and promotional purposes.",
             "After acceptance from the principal, it should be mailed to the social media coordinator as well as website coordinator for publishing in social media.",
@@ -120,7 +120,7 @@ export const committees = [
     {
         id: 13,
         name: "Technical Support Committee",
-        coordinators: ["Mr. Mayuresh (Instructor, CSE)"],
+        coordinators: [],
         responsibilities: [
             "Provides IT support for presentations, Wi-Fi, video conferencing if applicable, and other technical needs."
         ]
@@ -182,11 +182,10 @@ export const contactInfo = {
     institute: "T. John Institute of Technology",
     email: "tjitecemeet@outlook.com",
 
-    phone: "+91 9876543210" // Placeholder as requested
 };
 
 export const tjitAbout = [
-    "T. John Institute of Technology (TJIT) is a private engineering institution located in Bengaluru, Karnataka. Established in 2006 by Dr. Thomas P. John, it is part of the T. John Group of Institutions.",
+    "T. John Institute of Technology (TJIT) is a private engineering institution located in Bengaluru, Karnataka. Established in 2006 by Dr. Thomas John, it is part of the T. John Group of Institutions.",
     "The institute offers Undergraduate and Postgraduate programs and is affiliated to Visvesvaraya Technological University (VTU), Belagavi, and approved by the All India Council for Technical Education (AICTE), New Delhi.",
     "TJIT is committed to quality technical education, industry collaboration, research, and holistic student development to create competent, ethical, and socially responsible engineers."
 ];
@@ -228,7 +227,7 @@ import sponsorSANImg from '../assets/SAN_internationals.png';
 export const leadership = [
     {
         role: "CHIEF PATRON",
-        name: "Dr. Thomas P. John",
+        name: "Dr. Thomas John",
         designation: "Chairman",
         image: chairmanImg
     },
@@ -263,7 +262,7 @@ export const faculty = [
     { name: "Mrs. J. Aarthy Suganthi Kani", designation: "Assistant Professor", image: facultyAarthyImg },
     { name: "Ms. Sylvia Raj Isreal", designation: "Assistant Professor", image: facultySylviaImg },
     { name: "Ms. Aathira Arun Raj", designation: "Assistant Professor", image: facultyAathiraImg },
-    { name: "Mr. Mayuresh", designation: "Instructor", image: facultyMayureshImg }
+
 ];
 
 
@@ -335,3 +334,33 @@ export const sponsors = [
         logo: sponsorSANImg
     }
 ];
+
+export const callForPapers = {
+    intro: "Scientists, academicians, researchers, practicing engineers, and students from across the nation are cordially invited to submit their original research papers and case studies for presentation at the International Conference on MEET-2026, scheduled to be held on 17th April 2026 at T. John Institute of Technology, Bangalore, India, in both offline and online modes. The conference aims to provide a dynamic platform for participants to share their knowledge, skills, experiences, and expertise through research presentations and keynote addresses on the stated conference themes.",
+    submissionInfo: "Interested researchers, academicians, and students are requested to submit abstracts of 150-200 words, neatly typed and clearly outlining the methodology, key findings, and conclusions, on any of the listed topics. Selected papers will be published in conference proceedings with an ISBN and in peer-reviewed journals (publication charges applicable).",
+    themes: [
+        "Flexible Electronics",
+        "Aerospace, automotive and civil applications",
+        "AI & Machine Learning",
+        "Communications",
+        "Biomedical and Healthcare diagnostics",
+        "IoT, Cyber Security and forensic Science",
+        "Pathology and pharmacology",
+        "Nanomaterials and Nanotechnology applications",
+        "Smart Organization: AI based Business administration"
+    ],
+    importantDates: [
+        { event: "Conference Date", date: "17th April 2026" },
+        { event: "Abstract Submission Starts", date: "11th February 2026" },
+        { event: "Notification of Acceptance", date: "05th March 2026" },
+        { event: "Deadline for Full Paper Submissions", date: "20th March 2026" },
+        { event: "Deadline for Camera Ready Submission", date: "30th March 2026" }
+    ],
+    registrationFees: [
+        { category: "UG/PG Students", fee: "Rs. 300/- per participant" },
+        { category: "TJGI Staff", fee: "Rs. 500/- per participant" },
+        { category: "Academician/Research Scholar", fee: "Rs. 750/- per participant" },
+        { category: "Industry", fee: "Rs. 1000/- per participant" },
+        { category: "Online Participants", fee: "Rs. 650/- per team" }
+    ]
+};

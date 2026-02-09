@@ -24,51 +24,38 @@ const Home = () => {
                 <h3 className="date">17th April 2026</h3>
 
                 <div className="cta-buttons">
-                    <button className="btn btn-primary">Register Now</button>
-                    <button className="btn btn-secondary">Download Brochure</button>
+                    <button className="btn btn-primary" onClick={() => window.open('https://forms.easebuzz.in/register/TJohnInstituteofTechn/IC_MEET_2026', '_blank')}>Register Now</button>
+                    <a href="/IC MEET 2026 Paper Format.docx" download="IC_MEET_2026_Paper_Format.docx" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        Download Paper Format
+                    </a>
                 </div>
             </div>
 
-            <section className="section container" style={{ paddingTop: '80px', paddingBottom: '20px' }}>
+            <section className="section container" style={{ paddingTop: '40px', paddingBottom: '20px' }}>
                 <div className="section-title" style={{ marginBottom: '30px' }}>Welcome to IC-MEET 2026</div>
-                <p style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto', fontSize: '1.2rem', lineHeight: '1.8', color: '#555' }}>
+                <p style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#555', textAlign: 'center' }}>
                     Join us for a global gathering of minds in the fields of materials, engineering, and emerging technologies.
                     T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our 2026 international conference.
                 </p>
             </section>
 
             {/* About TJIT Split Section */}
-            <div className="container" style={{ marginTop: '50px' }}>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'minmax(280px, 30%) 1fr',
-                    alignItems: 'stretch',
-                    borderRadius: '20px',
-                    overflow: 'hidden',
-                    boxShadow: '0 8px 25px rgba(0,0,0,0.08)'
-                }}>
-                    <div style={{
-                        backgroundColor: 'var(--primary-blue)',
-                        color: 'white',
-                        padding: '40px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        textAlign: 'center'
-                    }}>
+            <div className="container" style={{ marginTop: '30px' }}>
+                <div className="about-split">
+                    <div className="about-split-sidebar">
                         <h2 style={{ fontSize: '2.2rem', fontWeight: 'bold', margin: 0 }}>About <br /> TJIT</h2>
                     </div>
-                    <div style={{ backgroundColor: 'white', padding: '40px' }}>
+                    <div className="about-split-content">
                         <div style={{ maxWidth: '800px' }}>
                             {tjitAbout.map((paragraph, index) => (
-                                <p key={index} style={{ marginBottom: '15px', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>{paragraph}</p>
+                                <p key={index} style={{ marginBottom: '15px', lineHeight: '1.7', color: '#444' }}>{paragraph}</p>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
 
-            <section className="section container" style={{ paddingTop: '60px' }}>
+            <section className="section container" style={{ paddingTop: '40px' }}>
                 <div className="vm-grid">
                     <div className="vm-box">
                         <h3>Vision</h3>
@@ -84,14 +71,14 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={{ marginTop: '80px' }}>
+                <div style={{ marginTop: '40px' }}>
                     <div className="section-title">Conference Patrons & Conveners</div>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                        gap: '20px',
-                        textAlign: 'center',
-                        justifyContent: 'center'
+                    <div className="patrons-grid" style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        gap: '40px 60px',
+                        paddingBottom: '20px'
                     }}>
                         {leadership.map((leader, index) => (
                             <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -127,7 +114,7 @@ const Home = () => {
                                         /> : 'Photo'}
                                 </div>
                                 <h3 style={{ marginBottom: '5px', color: 'var(--primary-blue)', fontSize: '1.1rem' }}>{leader.name}</h3>
-                                <p style={{ color: 'var(--text-gray)', fontSize: '0.9rem', lineHeight: '1.4', maxWidth: '200px' }}>{leader.designation}</p>
+                                <p style={{ color: 'var(--text-gray)', lineHeight: '1.4', maxWidth: '200px' }}>{leader.designation}</p>
                             </div>
                         ))}
                     </div>

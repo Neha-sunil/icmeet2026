@@ -32,6 +32,11 @@ body {
   background-color: var(--bg-light);
 }
 
+p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -77,7 +82,25 @@ nav {
   color: var(--primary-blue);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+.logo-text {
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 25px;
+  background-color: #ddd;
+  margin: 0 15px;
 }
 
 .nav-links {
@@ -97,7 +120,10 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--white);
   text-align: center;
   padding: 100px 20px;
@@ -125,7 +151,8 @@ nav {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -169,15 +196,16 @@ nav {
 
 /* Sections */
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-blue);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
+  line-height: 1.2;
 }
 
 .section-title::after {
@@ -188,6 +216,71 @@ nav {
   background-color: var(--accent-blue);
   margin: 15px auto 0;
   border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 480px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Home Page Specific */
+.about-split {
+  display: grid;
+  grid-template-columns: minmax(280px, 30%) 1fr;
+  align-items: stretch;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-split-sidebar {
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-split-content {
+  background-color: white;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-split-sidebar {
+    padding: 30px 20px;
+  }
+
+  .about-split-sidebar h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .about-split-content {
+    padding: 30px 20px;
+  }
 }
 
 .card-grid {
@@ -284,9 +377,17 @@ footer {
   margin-bottom: 40px;
 }
 
+.footer-section {
+  text-align: center;
+}
+
 .footer-section h3 {
   margin-bottom: 20px;
   font-size: 1.2rem;
+}
+
+.footer-section p {
+  text-align: center;
 }
 
 .footer-section p,
@@ -351,36 +452,11 @@ footer {
   color: var(--primary-blue);
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--white);
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: var(--shadow);
-    text-align: center;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-
 /* Subpage Header */
 .subpage-header {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background-size: cover;
+  background-position: center;
   color: var(--white);
   padding: 80px 0;
   text-align: center;
@@ -423,5 +499,112 @@ footer {
 
   .about-section-heading {
     position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem !important;
+  }
+
+  .logo img {
+    height: 35px !important;
+  }
+
+  .logo-divider {
+    margin: 0 8px !important;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section a {
+    display: inline-block;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-divider {
+    margin: 0 5px !important;
+  }
+
+  .subpage-header h1 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
   }
 }

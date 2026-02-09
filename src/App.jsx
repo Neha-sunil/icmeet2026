@@ -7,6 +7,7 @@ import About from './pages/About';
 import Department from './pages/Department';
 import Committees from './pages/Committees';
 import Sponsors from './pages/Sponsors';
+import CallForPapers from './pages/CallForPapers';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/department" element={<Department />} />
             <Route path="/committees" element={<Committees />} />
             <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/call-for-papers" element={<CallForPapers />} />
           </Routes>
         </main>
         <Footer />
