@@ -1,7 +1,7 @@
 import React from 'react';
 import { callForPapers } from '../data/content';
-import registrationQr from '../assets/registration.jpeg';
-import paymentQr from '../assets/payment.jpeg';
+import registrationQr from '../assets/Register.png';
+import paymentQr from '../assets/payment_qr.jpg';
 import '../index.css';
 
 const CallForPapers = () => {

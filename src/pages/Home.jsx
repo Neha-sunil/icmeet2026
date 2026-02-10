@@ -24,7 +24,7 @@ const Home = () => {
                 <h3 className="date">17th April 2026</h3>
 
                 <div className="cta-buttons">
-                    <button className="btn btn-primary" onClick={() => window.open('https://forms.easebuzz.in/register/TJohnInstituteofTechn/IC_MEET_2026', '_blank')}>Register Now</button>
+                    <button className="btn btn-primary" onClick={() => window.open('https://forms.gle/Bsia1xqWdA68qmVE9', '_blank')}>Register Now</button>
                     <a href="/IC MEET 2026 Paper Format.docx" download="IC_MEET_2026_Paper_Format.docx" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         Download Paper Format
                     </a>
