@@ -1,5 +1,6 @@
 import React from 'react';
 import { peos, psos, keynoteSpeakers, advisoryCommittee } from '../data/content';
+import tjitImg from '../assets/tjit.jpg';
 import '../index.css';
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
                     boxShadow: '0 8px 25px rgba(0,0,0,0.08)'
                 }}>
                     <div style={{
-                        background: 'linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url("/src/assets/tjit.jpg")',
+                        background: `linear-gradient(135deg, rgba(0, 51, 102, 0.7) 0%, rgba(0, 86, 179, 0.7) 100%), url(${tjitImg})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         color: 'white',

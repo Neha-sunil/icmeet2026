@@ -120,7 +120,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.75) 0%, rgba(0, 86, 179, 0.75) 100%), url('./assets/tjit.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -249,7 +249,7 @@ nav {
 }
 
 .about-split-sidebar {
-  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.75) 0%, rgba(0, 86, 179, 0.75) 100%), url('./assets/tjit.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -454,7 +454,7 @@ footer {
 
 /* Subpage Header */
 .subpage-header {
-  background: linear-gradient(135deg, rgba(0, 51, 102, 0.85) 0%, rgba(0, 86, 179, 0.85) 100%), url('./assets/tjit.jpg');
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.75) 0%, rgba(0, 86, 179, 0.75) 100%), url('./assets/tjit.jpg');
   background-size: cover;
   background-position: center;
   color: var(--white);
