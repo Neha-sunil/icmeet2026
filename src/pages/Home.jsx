@@ -25,8 +25,8 @@ const Home = () => {
 
                 <div className="cta-buttons">
                     <button className="btn btn-primary" onClick={() => window.open('https://forms.gle/Bsia1xqWdA68qmVE9', '_blank')}>Register Now</button>
-                    <a href="/IC MEET 2026 Paper Format.docx" download="IC_MEET_2026_Paper_Format.docx" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        Download Paper Format
+                    <a href="/IC MEET 2026.pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        Download Brochure
                     </a>
                 </div>
             </div>
