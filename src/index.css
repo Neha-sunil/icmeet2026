@@ -30,6 +30,10 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--bg-light);
+  background-image: linear-gradient(rgba(248, 249, 250, 0.95), rgba(248, 249, 250, 0.95)), url('./assets/tjit.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 p {
