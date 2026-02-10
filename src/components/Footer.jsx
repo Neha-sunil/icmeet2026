@@ -18,7 +18,7 @@ const Footer = () => {
                         Department of Electronics and Communication Engineering <br />
                         T. John Institute of Technology
                     </p>
-                    <a href="mailto:tjitecemeet@outlook.com">tjitecemeet@outlook.com</a>
+                    <a href="mailto:tjitecemeet@gmail.com">tjitecemeet@gmail.com</a>
                 </div>
                 <div className="footer-section">
                     <h3>Quick Links</h3>

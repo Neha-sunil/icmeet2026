@@ -180,7 +180,7 @@ export const pos = [
 export const contactInfo = {
     department: "Department of Electronics and Communication Engineering",
     institute: "T. John Institute of Technology",
-    email: "tjitecemeet@outlook.com",
+    email: "tjitecemeet@gmail.com",
 
 };
 
