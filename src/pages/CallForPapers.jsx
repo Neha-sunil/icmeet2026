@@ -1,6 +1,7 @@
 import React from 'react';
 import { callForPapers } from '../data/content';
 import registrationQr from '../assets/registration.jpeg';
+import paymentQr from '../assets/payment.jpeg';
 import '../index.css';
 
 const CallForPapers = () => {
@@ -224,10 +225,9 @@ const CallForPapers = () => {
                             border: '1px solid #eee',
                             borderRadius: '12px',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.08)',
-                            overflow: 'hidden',
-                            color: '#999'
+                            overflow: 'hidden'
                         }}>
-                            [QR CODE]
+                            <img src={paymentQr} alt="Payment QR Code" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </div>
                         <p style={{ color: 'var(--text-gray)', fontSize: '0.95rem', fontWeight: '600', textAlign: 'center' }}>
                             Scan to complete payment
