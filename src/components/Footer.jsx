@@ -1,6 +1,6 @@
 import React from 'react';
 import sponsorSamsonImg from '../assets/SamsonPharma.png';
-import sponsorSMPImg from '../assets/SMP_logo.png';
+import sponsorSMPImg from '../assets/smp.png';
 import sponsorSANImg from '../assets/SAN_internationals.png';
 import '../index.css';
 
@@ -14,11 +14,13 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h3>Contact</h3>
-                    <p style={{ marginBottom: '15px' }}>
-                        Department of Electronics and Communication Engineering <br />
-                        T. John Institute of Technology
-                    </p>
-                    <a href="mailto:tjitecemeet@gmail.com">tjitecemeet@gmail.com</a>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        <p style={{ margin: 0 }}>
+                            Department of Electronics and Communication Engineering <br />
+                            T. John Institute of Technology
+                        </p>
+                        <a href="mailto:tjitecemeet@gmail.com" style={{ margin: 0 }}>tjitecemeet@gmail.com</a>
+                    </div>
                 </div>
                 <div className="footer-section">
                     <h3>Quick Links</h3>
@@ -38,17 +40,17 @@ const Footer = () => {
                         marginTop: '10px',
                         alignItems: 'center'
                     }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <img src={sponsorSMPImg} alt="SMP" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
-                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>SMP</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', justifyContent: 'center' }}>
+                            <img src={sponsorSMPImg} alt="Square Microwave Products Pvt. Ltd" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+                            <span style={{ fontSize: '0.9rem', opacity: 0.9 }}>Square Microwave Products Pvt. Ltd</span>
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', justifyContent: 'center' }}>
                             <img src={sponsorSamsonImg} alt="Samson Pharma" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
-                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>Samson Pharma</span>
+                            <span style={{ fontSize: '0.9rem', opacity: 0.9 }}>Samson Pharma</span>
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', justifyContent: 'center' }}>
                             <img src={sponsorSANImg} alt="SAN International" style={{ height: '30px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
-                            <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>SAN International</span>
+                            <span style={{ fontSize: '0.9rem', opacity: 0.9 }}>SAN International</span>
                         </div>
                     </div>
                 </div>

@@ -83,7 +83,7 @@ const CallForPapers = () => {
                             <div>
                                 <h4 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.2rem' }}>Full Paper Format</h4>
                                 <p style={{ fontSize: '1rem', color: '#555', marginBottom: '25px', fontStyle: 'italic', lineHeight: '1.5' }}>
-                                    The full paper must strictly follow the prescribed format and should not exceed six pages.
+                                    The full paper must strictly follow the prescribed format and should not exceed six pages. Also, plagiarism should not exceed 20%.
                                 </p>
                             </div>
                             <a
@@ -108,6 +108,22 @@ const CallForPapers = () => {
                             </a>
                         </div>
                     </div>
+                </div>
+
+                {/* Publication Details section */}
+                <div style={{
+                    marginTop: '40px',
+                    marginBottom: '40px',
+                    padding: '30px',
+                    backgroundColor: 'rgba(0, 51, 102, 0.05)',
+                    borderRadius: '15px',
+                    borderLeft: '6px solid var(--primary-blue)',
+                    textAlign: 'center'
+                }}>
+                    <h3 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.5rem' }}>Publication Details (Tentative)</h3>
+                    <p style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.6', margin: 0 }}>
+                        Selected papers are intended for publication in conference proceedings with an ISBN and in peer-reviewed journals. Publication details will be announced soon.
+                    </p>
                 </div>
 
                 {/* Themes and Dates Grid */}

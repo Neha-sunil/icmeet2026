@@ -21,11 +21,22 @@ const Home = () => {
                     "INTERDISCIPLINARY INNOVATION IN ENGINEERING AND TECHNOLOGY"
                 </div>
                 <h2 style={{ color: '#e3f2fd', marginTop: '10px' }}>Organized by Department of Electronics and Communication Engineering</h2>
-                <h3 className="date">17th April 2026</h3>
+
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '10px',
+                    alignItems: 'center',
+                    marginTop: '20px',
+                    marginBottom: '30px'
+                }}>
+                    <div className="date" style={{ margin: 0 }}>Date: 17th April 2026</div>
+                    <div className="date" style={{ margin: 0, backgroundColor: 'rgba(0, 51, 102, 0.4)' }}>Mode: Hybrid (Online & Offline)</div>
+                </div>
 
                 <div className="cta-buttons">
                     <button className="btn btn-primary" onClick={() => window.open('https://forms.gle/Bsia1xqWdA68qmVE9', '_blank')}>Register Now</button>
-                    <a href="/IC MEET 2026.pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <a href="/IC MEET 2026 - Conference Brochure(final).pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         Download Brochure
                     </a>
                 </div>
@@ -35,7 +46,7 @@ const Home = () => {
                 <div className="section-title" style={{ marginBottom: '30px' }}>Welcome to IC-MEET 2026</div>
                 <p style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#555', textAlign: 'center' }}>
                     Join us for a global gathering of minds in the fields of Materials, Engineering, and Merging Technologies.
-                    T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our 2026 international conference.
+                    T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our international conference 2026.
                 </p>
             </section>
 

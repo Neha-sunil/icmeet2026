@@ -1,14 +1,6 @@
 
 export const committees = [
-    {
-        id: 5,
-        name: "Banner Fixing Committee",
-        coordinators: ["Dr. Parameshappa (Professor, ECE)"],
-        responsibilities: [
-            "Installs banners and signage at strategic locations within the conference venue to guide attendees and promote conference activities.",
-            "Installs banners and directional signage at strategic places within the venue."
-        ]
-    },
+
     {
         id: 8,
         name: "Chief Guest Honor, Keynote Address and Inauguration Committee",
@@ -22,7 +14,7 @@ export const committees = [
     {
         id: 12,
         name: "Conference KIT & Food and Catering Committee",
-        coordinators: ["Dr. V Manjunath (Prof., ECE)"],
+        coordinators: ["Dr. V Manjunatha (Prof., ECE)"],
         responsibilities: [
             "Organize the assembly process, ensuring all materials (note pad, pen, and swag) are included, and manage inventory.",
             "Coordinates venue arrangements, seating, catering, and other required arrangements for Food committee.",
@@ -44,7 +36,7 @@ export const committees = [
     {
         id: 4,
         name: "Invitation, Banner and Poster Design, Publicity and Communication Committee",
-        coordinators: ["Dr. N. R. Dhineshbabu (Assoc. Prof., ECE)"],
+        coordinators: ["Dr. N. R. Dhineshbabu (Assoc. Prof., ECE)", "Dr. Parameshappa (Professor, ECE)"],
         responsibilities: [
             "Designs the promotional materials, invitations, banners, posters, and other promotional materials.",
             "Publicizes the conference, manages social media and participant communications, to publicize the conference.",
@@ -81,7 +73,7 @@ export const committees = [
     {
         id: 7,
         name: "Photography and Video Committee",
-        coordinators: ["Dr. Rene Dev (Asso. Professor, ECE)", "Dr. V Manjunath (Prof., ECE)"],
+        coordinators: ["Dr. Rene Dev (Asso. Professor, ECE)", "Dr. V Manjunatha (Prof., ECE)"],
         responsibilities: [
             "Captures photos and videos of conference proceedings, keynote speeches, Geo tagged Photos and other activities for documentation and promotional purposes.",
             "After acceptance from the principal, it should be mailed to the social media coordinator as well as website coordinator for publishing in social media.",
@@ -120,7 +112,7 @@ export const committees = [
     {
         id: 13,
         name: "Technical Support Committee",
-        coordinators: [],
+        coordinators: ["Mr. Manjunatha Reddy K M (Instructor)"],
         responsibilities: [
             "Provides IT support for presentations, Wi-Fi, video conferencing if applicable, and other technical needs."
         ]
@@ -203,7 +195,7 @@ import principalImg from '../assets/principal_hq.png';
 import hodImg from '../assets/hod.jpg';
 import convenerImg from '../assets/convener.jpg';
 import samJaikumarImg from '../assets/sam_jaikumar.jpg';
-import roonaDevImg from '../assets/roona_dev.jpg';
+import reenaDevImg from '../assets/roona_dev.jpg';
 import advisoryArunmethaImg from '../assets/advisory_arunmetha.jpg';
 import advisoryBeniImg from '../assets/advisory_beni.jpg';
 import advisoryEzhaveniImg from '../assets/advisory_ezhaveni.jpg';
@@ -222,7 +214,7 @@ import facultyAathiraImg from '../assets/Aathira.jpg';
 import facultyMayureshImg from '../assets/Mayuresh.png';
 import facultyManjunathaReddyImg from '../assets/Manjunathareddy.jpeg';
 import sponsorSamsonImg from '../assets/SamsonPharma.png';
-import sponsorSMPImg from '../assets/SMP_logo.png';
+import sponsorSMPImg from '../assets/smp.png';
 import sponsorSANImg from '../assets/SAN_internationals.png';
 
 export const leadership = [
@@ -254,7 +246,7 @@ export const leadership = [
 export const faculty = [
     { name: "Dr. Drakshayini M N", designation: "Professor & HOD", image: hodImg },
     { name: "Dr. Parameshappa", designation: "Professor", image: facultyParameshappaImg },
-    { name: "Dr. V Manjunath", designation: "Professor", image: facultyManjunathImg },
+    { name: "Dr. V Manjunatha", designation: "Professor", image: facultyManjunathImg },
     { name: "Dr. Rajan V R", designation: "Associate Professor", image: facultyRajanImg },
     { name: "Dr. B. Srilatha", designation: "Associate Professor", image: facultySrilathaImg },
     { name: "Dr. Rene Dev", designation: "Associate Professor", image: facultyReneDevImg },
@@ -263,7 +255,7 @@ export const faculty = [
     { name: "Mrs. J. Aarthy Suganthi Kani", designation: "Assistant Professor", image: facultyAarthyImg },
     { name: "Ms. Sylvia Raj Isreal", designation: "Assistant Professor", image: facultySylviaImg },
     { name: "Ms. Aathira Arun Raj", designation: "Assistant Professor", image: facultyAathiraImg },
-    { name: "Mr. Manjunathareddy K M", designation: "Assistant Professor", image: facultyManjunathaReddyImg },
+    { name: "Mr. Manjunatha Reddy K M", designation: "Instructor", image: facultyManjunathaReddyImg },
 
 ];
 
@@ -275,9 +267,9 @@ export const keynoteSpeakers = [
         image: samJaikumarImg
     },
     {
-        name: "Ms. Roona Dev",
+        name: "Ms. Reena Dev",
         designation: "Tech Manager, Aspire Systems, United States",
-        image: roonaDevImg
+        image: reenaDevImg
     }
 ];
 export const advisoryCommittee = [
@@ -326,8 +318,8 @@ export const sponsors = [
         logo: sponsorSamsonImg
     },
     {
-        name: "SMP (Always Advancing)",
-        description: "SMP is committed to advancing technology, education, and professional development through its support of academic events and research-driven initiatives.",
+        name: "Square Microwave Products Pvt. Ltd",
+        description: "Square Microwave Products Pvt. Ltd is committed to advancing technology, education, and professional development through its support of academic events and research-driven initiatives.",
         logo: sponsorSMPImg
     },
     {
