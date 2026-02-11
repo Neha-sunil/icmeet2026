@@ -220,6 +220,7 @@ import facultySrilathaImg from '../assets/Srilatha.jpg';
 import facultyAarthyImg from '../assets/Aarthy.jpg';
 import facultyAathiraImg from '../assets/Aathira.jpg';
 import facultyMayureshImg from '../assets/Mayuresh.png';
+import facultyManjunathaReddyImg from '../assets/Manjunathareddy.jpeg';
 import sponsorSamsonImg from '../assets/SamsonPharma.png';
 import sponsorSMPImg from '../assets/SMP_logo.png';
 import sponsorSANImg from '../assets/SAN_internationals.png';
@@ -262,6 +263,7 @@ export const faculty = [
     { name: "Mrs. J. Aarthy Suganthi Kani", designation: "Assistant Professor", image: facultyAarthyImg },
     { name: "Ms. Sylvia Raj Isreal", designation: "Assistant Professor", image: facultySylviaImg },
     { name: "Ms. Aathira Arun Raj", designation: "Assistant Professor", image: facultyAathiraImg },
+    { name: "Mr. Manjunathareddy K M", designation: "Assistant Professor", image: facultyManjunathaReddyImg },
 
 ];
 
