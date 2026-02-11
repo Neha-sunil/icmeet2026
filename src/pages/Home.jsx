@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home-page">
             <div className="hero">
                 <h2 style={{ fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}>International Conference on</h2>
-                <h1>Recent Trends in Materials, Engineering <br /> and Emerging Technology (IC-MEET 2026)</h1>
+                <h1>Recent Trends in <span style={{ color: '#FFD700' }}>M</span>aterials, <span style={{ color: '#FFD700' }}>E</span>ngineering <br /> and <span style={{ color: '#FFD700' }}>E</span>merging <span style={{ color: '#FFD700' }}>T</span>echnology (IC-MEET 2026)</h1>
                 <div style={{
                     fontSize: '0.85rem',
                     fontWeight: '300',
@@ -34,7 +34,7 @@ const Home = () => {
             <section className="section container" style={{ paddingTop: '40px', paddingBottom: '20px' }}>
                 <div className="section-title" style={{ marginBottom: '30px' }}>Welcome to IC-MEET 2026</div>
                 <p style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#555', textAlign: 'center' }}>
-                    Join us for a global gathering of minds in the fields of materials, engineering, and emerging technologies.
+                    Join us for a global gathering of minds in the fields of Materials, Engineering, and Merging Technologies.
                     T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our 2026 international conference.
                 </p>
             </section>
