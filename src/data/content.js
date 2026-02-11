@@ -293,8 +293,8 @@ export const advisoryCommittee = [
     },
     {
         name: "Dr. Saravanan K",
-        role: "Engineer",
-        organization: "Power chip Semiconductor Manufacturing Company, Taiwan",
+        role: "Senior Engineer - BEOL Process Integration",
+        organization: "Tata Semiconductor Manufacturing Private Limited (TSMPL), Dholera, Gujarat",
         image: advisorySaravananImg
     },
     {
