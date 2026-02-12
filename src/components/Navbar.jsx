@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/tjit-logo.png';
 import icmeetLogo from '../assets/ICMEET logo.png';
+import CountdownTimer from './CountdownTimer';
 import '../index.css';
 
 const Navbar = () => {
@@ -14,6 +15,7 @@ const Navbar = () => {
 
     return (
         <header>
+            <CountdownTimer />
             <div className="container">
                 <nav>
                     <div className="logo">
