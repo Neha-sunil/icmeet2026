@@ -178,7 +178,7 @@ export const contactInfo = {
 
 export const tjitAbout = [
     "T. John Institute of Technology (TJIT) is a private engineering institution located in Bengaluru, Karnataka. Established in 2006 by Dr. Thomas John, it is part of the T. John Group of Institutions.",
-    "The institute offers Undergraduate and Postgraduate programs and is affiliated to Visvesvaraya Technological University (VTU), Belagavi, and approved by the All India Council for Technical Education (AICTE), New Delhi.",
+    "The Institute offers Undergraduate and Postgraduate programs and is affiliated to Visvesvaraya Technological University (VTU), Belagavi, and approved by the All India Council for Technical Education (AICTE), New Delhi.",
     "TJIT is committed to quality technical education, industry collaboration, research, and holistic student development to create competent, ethical, and socially responsible engineers."
 ];
 

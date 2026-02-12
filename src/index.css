@@ -90,19 +90,19 @@ nav {
 }
 
 .logo img {
-  height: 45px;
+  height: 60px;
   width: auto;
 }
 
 .logo-text {
   white-space: nowrap;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .logo-divider {
   width: 1px;
-  height: 25px;
+  height: 35px;
   background-color: #ddd;
   margin: 0 15px;
 }

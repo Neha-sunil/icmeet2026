@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home-page">
             <div className="hero">
-                <h2 style={{ fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}>International Conference on</h2>
+                <h2 style={{ fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}><span style={{ color: '#FFD700' }}>I</span>nternational <span style={{ color: '#FFD700' }}>C</span>onference on</h2>
                 <h1>Recent Trends in <span style={{ color: '#FFD700' }}>M</span>aterials, <span style={{ color: '#FFD700' }}>E</span>ngineering <br /> and <span style={{ color: '#FFD700' }}>E</span>merging <span style={{ color: '#FFD700' }}>T</span>echnology (IC-MEET 2026)</h1>
                 <div style={{
                     fontSize: '0.85rem',
@@ -36,7 +36,7 @@ const Home = () => {
 
                 <div className="cta-buttons">
                     <button className="btn btn-primary" onClick={() => window.open('https://forms.gle/Bsia1xqWdA68qmVE9', '_blank')}>Register Now</button>
-                    <a href="/IC MEET 2026 - Conference Brochure(final).pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-secondary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <a href="/MEET 2026 Conference TJIT Brochure.pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-primary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         Download Brochure
                     </a>
                 </div>
