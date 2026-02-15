@@ -46,7 +46,7 @@ const Home = () => {
                 <div className="section-title" style={{ marginBottom: '30px' }}>Welcome to IC-MEET 2026</div>
                 <p style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#555', textAlign: 'center' }}>
                     Join us for a global gathering of minds in the fields of Materials, Engineering, and Merging Technologies.
-                    T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our international conference 2026.
+                    T. John Institute of Technology welcomes you to explore the future of innovation and collaborative research at our International Conference 2026.
                 </p>
             </section>
 
@@ -66,17 +66,62 @@ const Home = () => {
                 </div>
             </div>
 
-            <section className="section container" style={{ paddingTop: '40px' }}>
+            <section className="section container" style={{ paddingTop: '20px', paddingBottom: '60px' }}>
+                <div className="section-title" style={{ marginBottom: '40px' }}>Vision & Mission</div>
                 <div className="vm-grid">
-                    <div className="vm-box">
-                        <h3>Vision</h3>
-                        <p>{tjitVision}</p>
+                    <div className="vm-box" style={{
+                        borderTop: '5px solid var(--accent-blue)',
+                        transition: 'transform 0.3s ease',
+                        display: 'flex',
+                        flexDirection: 'column'
+                    }}>
+                        <h3 style={{
+                            fontSize: '1.8rem',
+                            color: 'var(--primary-blue)',
+                            marginBottom: '20px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px'
+                        }}>
+                            Vision
+                        </h3>
+                        <p style={{
+                            fontSize: '1.1rem',
+                            lineHeight: '1.8',
+                            color: '#444',
+                            textAlign: 'justify',
+                            margin: 0
+                        }}>
+                            {tjitVision}
+                        </p>
                     </div>
-                    <div className="vm-box">
-                        <h3>Mission</h3>
-                        <ul className="mission-list">
+                    <div className="vm-box" style={{
+                        borderTop: '5px solid var(--secondary-blue)',
+                        transition: 'transform 0.3s ease',
+                        display: 'flex',
+                        flexDirection: 'column'
+                    }}>
+                        <h3 style={{
+                            fontSize: '1.8rem',
+                            color: 'var(--primary-blue)',
+                            marginBottom: '20px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px'
+                        }}>
+                            Mission
+                        </h3>
+                        <ul className="mission-list" style={{ padding: 0, margin: 0 }}>
                             {tjitMission.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index} style={{
+                                    fontSize: '1.1rem',
+                                    lineHeight: '1.7',
+                                    color: '#444',
+                                    marginBottom: '12px',
+                                    textAlign: 'justify'
+                                }}>
+                                    {item}
+                                </li>
                             ))}
                         </ul>
                     </div>

@@ -298,7 +298,7 @@ export const advisoryCommittee = [
         image: advisorySaravananImg
     },
     {
-        name: "Dr. Srither Pandey M",
+        name: "Dr. Sridharpanday M",
         role: "Process Engineer",
         organization: "IHI Corporation, New Delhi",
         image: advisorySritherImg

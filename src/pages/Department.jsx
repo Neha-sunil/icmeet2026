@@ -56,7 +56,7 @@ const Department = () => {
                             {departmentMission.map((point, index) => {
                                 const [marker, ...rest] = point.split(':');
                                 return (
-                                    <li key={index} style={{ marginBottom: '15px' }}>
+                                    <li key={index} style={{ marginBottom: '15px', textAlign: 'justify' }}>
                                         <strong>{marker}:</strong> {rest.join(':')}
                                     </li>
                                 );
