@@ -83,7 +83,7 @@ const CallForPapers = () => {
                             <div>
                                 <h4 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.2rem' }}>Full Paper Format</h4>
                                 <p style={{ fontSize: '1rem', color: '#555', marginBottom: '25px', fontStyle: 'italic', lineHeight: '1.5' }}>
-                                    The full paper must strictly follow the prescribed format and should not exceed six pages. Also, plagiarism should not exceed 20%.
+                                    The full paper must strictly follow the prescribed format and should not exceed six pages. Also, AI should be non-detectable and Similarity Index (SI) should be not more than 10%
                                 </p>
                             </div>
                             <a
