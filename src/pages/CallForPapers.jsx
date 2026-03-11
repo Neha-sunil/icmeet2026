@@ -87,8 +87,8 @@ const CallForPapers = () => {
                                 </p>
                             </div>
                             <a
-                                href="/IC MEET 2026 Paper Format.docx"
-                                download="IC_MEET_2026_Paper_Format.docx"
+                                href="/jeet_template.docx"
+                                download="jeet_template.docx"
                                 className="btn btn-primary"
                                 style={{
                                     display: 'inline-flex',
@@ -120,10 +120,15 @@ const CallForPapers = () => {
                     borderLeft: '6px solid var(--primary-blue)',
                     textAlign: 'center'
                 }}>
-                    <h3 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.5rem' }}>Publication Details (Tentative)</h3>
-                    <p style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.6', margin: 0 }}>
-                        Selected papers are intended for publication in conference proceedings with an ISBN and in peer-reviewed journals. Publication details will be announced soon.
-                    </p>
+                    <h3 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.5rem' }}>Publication Details</h3>
+                    <div style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.6', margin: 0 }}>
+                        <p style={{ marginBottom: '10px' }}>
+                            Selected papers will be considered for publication in the Scopus-indexed journal, <strong>Journal of Engineering Education Transformations (JEET)</strong>.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            Publication is subject to the journal’s peer-review process and may involve additional publication charges.
+                        </p>
+                    </div>
                 </div>
 
                 {/* Themes and Dates Grid */}
