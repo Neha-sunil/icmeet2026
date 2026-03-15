@@ -211,7 +211,6 @@ import facultySylviaImg from '../assets/Sylvia.jpg';
 import facultySrilathaImg from '../assets/Srilatha.jpg';
 import facultyAarthyImg from '../assets/Aarthy.jpg';
 import facultyAathiraImg from '../assets/Aathira.jpg';
-import facultyMayureshImg from '../assets/Mayuresh.png';
 import facultyManjunathaReddyImg from '../assets/Manjunathareddy.jpeg';
 import sponsorSamsonImg from '../assets/SamsonPharma.png';
 import sponsorSMPImg from '../assets/smp.png';

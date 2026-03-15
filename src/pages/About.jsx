@@ -1,5 +1,5 @@
 import React from 'react';
-import { peos, psos, keynoteSpeakers, advisoryCommittee } from '../data/content';
+import { keynoteSpeakers, advisoryCommittee } from '../data/content';
 import tjitImg from '../assets/tjit.jpg';
 import '../index.css';
 

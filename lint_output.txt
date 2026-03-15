@@ -1,0 +1,14 @@
+﻿
+> conference@0.0.0 lint
+> eslint .
+
+
+C:\Users\Neha Sunil\OneDrive\Documents\conference\src\data\content.js
+  214:8  error  'facultyMayureshImg' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\Neha Sunil\OneDrive\Documents\conference\src\pages\About.jsx
+  2:10  error  'peos' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  2:16  error  'psos' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Γ£û 3 problems (3 errors, 0 warnings)
+
