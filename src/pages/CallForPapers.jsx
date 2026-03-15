@@ -113,7 +113,7 @@ const CallForPapers = () => {
                 {/* Publication Details section */}
                 <div style={{
                     marginTop: '40px',
-                    marginBottom: '40px',
+                    marginBottom: '20px',
                     padding: '30px',
                     backgroundColor: 'rgba(0, 51, 102, 0.05)',
                     borderRadius: '15px',
@@ -126,7 +126,24 @@ const CallForPapers = () => {
                             Selected papers will be considered for publication in the Scopus-indexed journal, <strong>Journal of Engineering Education Transformations (JEET)</strong>.
                         </p>
                         <p style={{ margin: 0 }}>
-                            Publication is subject to the journal’s peer-review process and may involve additional publication charges.
+                            Publication is subject to the journal’s peer-review process and may involve additional publication charges*.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Author Guidelines section */}
+                <div style={{
+                    marginBottom: '40px',
+                    padding: '30px',
+                    backgroundColor: 'rgba(0, 51, 102, 0.05)',
+                    borderRadius: '15px',
+                    borderLeft: '6px solid var(--primary-blue)',
+                    textAlign: 'center'
+                }}>
+                    <h3 style={{ color: 'var(--primary-blue)', marginBottom: '15px', fontSize: '1.3rem', textAlign: 'left' }}>* For Author Guidelines:</h3>
+                    <div style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.6', margin: 0, textAlign: 'left' }}>
+                        <p style={{ margin: 0 }}>
+                            Once the manuscript is accepted after the peer review process, authors are required to pay a publication charge of Rs. 8,500/- (inclusive of tax and service charges) for processing and publication.
                         </p>
                     </div>
                 </div>
