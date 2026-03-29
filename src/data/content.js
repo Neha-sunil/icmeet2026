@@ -344,10 +344,9 @@ export const callForPapers = {
     ],
     importantDates: [
         { event: "Conference Date", date: "17th April 2026" },
-        { event: "Abstract Submission Starts", date: "11th February 2026" },
-        { event: "Notification of Acceptance", date: "05th March 2026" },
-        { event: "Deadline for Full Paper Submissions", date: "20th March 2026" },
-        { event: "Deadline for Camera Ready Submission", date: "30th March 2026" }
+        { event: "Last date of Abstract Submission", date: "02.04.2026" },
+        { event: "Notification of Abstract", date: "05.04.2026" },
+        { event: "Deadline of full paper submission", date: "07.04.2026" }
     ],
     registrationFees: [
         { category: "UG/PG Students", fee: "Rs. 300/- per participant" },
