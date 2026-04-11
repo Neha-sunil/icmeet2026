@@ -354,5 +354,6 @@ export const callForPapers = {
         { category: "Academician/Research Scholar", fee: "Rs. 750/- per participant" },
         { category: "Industry", fee: "Rs. 1000/- per participant" },
         { category: "Online Participants", fee: "Rs. 650/- per team" }
-    ]
+    ],
+    registrationLink: "https://forms.gle/Bsia1xqWdA68qmVE9"
 };

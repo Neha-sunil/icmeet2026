@@ -1,6 +1,5 @@
 import React from 'react';
 import { callForPapers } from '../data/content';
-import registrationQr from '../assets/Register.png';
 import paymentQr from '../assets/payment_qr.jpg';
 import '../index.css';
 
@@ -228,25 +227,42 @@ const CallForPapers = () => {
                     gap: '40px',
                     marginTop: '50px'
                 }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <h3 style={{ marginBottom: '20px', color: 'var(--primary-blue)' }}>SCAN TO REGISTER</h3>
-                        <div style={{
-                            width: '200px',
-                            height: '200px',
-                            backgroundColor: 'white',
-                            marginBottom: '15px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            border: '1px solid #eee',
-                            borderRadius: '12px',
-                            boxShadow: '0 4px 15px rgba(0,0,0,0.08)',
-                            overflow: 'hidden'
-                        }}>
-                            <img src={registrationQr} alt="Registration QR Code" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                        </div>
-                        <p style={{ color: 'var(--text-gray)', fontSize: '0.95rem', fontWeight: '600', textAlign: 'center' }}>
-                            Scan to open registration form
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <h3 style={{ marginBottom: '20px', color: 'var(--primary-blue)' }}>REGISTRATION</h3>
+                        <a 
+                            href={callForPapers.registrationLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '10px',
+                                textDecoration: 'none',
+                                padding: '15px 40px',
+                                fontSize: '1.2rem',
+                                backgroundColor: 'var(--primary-blue)',
+                                color: 'white',
+                                borderRadius: '50px',
+                                boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
+                                transition: 'all 0.3s ease',
+                                fontWeight: '600'
+                            }}
+                            onMouseOver={(e) => {
+                                e.currentTarget.style.backgroundColor = 'var(--secondary-blue)';
+                                e.currentTarget.style.transform = 'translateY(-3px)';
+                                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+                            }}
+                            onMouseOut={(e) => {
+                                e.currentTarget.style.backgroundColor = 'var(--primary-blue)';
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+                            }}
+                        >
+                            Register Now
+                        </a>
+                        <p style={{ marginTop: '15px', color: 'var(--text-gray)', fontSize: '0.95rem', fontWeight: '600', textAlign: 'center' }}>
+                            Click to open registration form
                         </p>
                     </div>
 

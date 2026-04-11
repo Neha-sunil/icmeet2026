@@ -1,5 +1,5 @@
 import React from 'react';
-import { tjitAbout, tjitVision, tjitMission, leadership } from '../data/content';
+import { tjitAbout, tjitVision, tjitMission, leadership, callForPapers } from '../data/content';
 import '../index.css';
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
 
                 <div className="cta-buttons">
-                    <button className="btn btn-primary" onClick={() => window.open('https://forms.gle/Bsia1xqWdA68qmVE9', '_blank')}>Register Now</button>
+                    <button className="btn btn-primary" onClick={() => window.open(callForPapers.registrationLink, '_blank')}>Register Now</button>
                     <a href="/MEET 2026 Conference TJIT Brochure.pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-primary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         Download Brochure
                     </a>
