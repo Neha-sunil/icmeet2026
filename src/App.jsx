@@ -17,6 +17,20 @@ function App() {
       <ScrollToTop />
       <div className="app-container">
         <Navbar />
+        <div style={{
+          backgroundColor: '#f0f7ff',
+          color: '#0056b3',
+          padding: '12px 20px',
+          textAlign: 'center',
+          fontWeight: '500',
+          fontSize: '1.1rem',
+          borderBottom: '1px solid #cce5ff',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)',
+          zIndex: 100,
+          position: 'relative'
+        }}>
+          Note: The IC-MEET 2026 Conference has ended. Registrations and submissions are now closed.
+        </div>
         <main style={{ minHeight: '80vh' }}>
           <Routes>
             <Route path="/" element={<Home />} />

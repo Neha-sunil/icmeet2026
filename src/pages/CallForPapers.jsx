@@ -12,22 +12,6 @@ const CallForPapers = () => {
                 </div>
             </div>
 
-            <div className="container" style={{ marginTop: '30px' }}>
-                <div style={{
-                    backgroundColor: '#f0f7ff',
-                    color: '#0056b3',
-                    padding: '15px 25px',
-                    borderRadius: '10px',
-                    border: '1px solid #cce5ff',
-                    textAlign: 'center',
-                    fontWeight: '500',
-                    fontSize: '1.2rem',
-                    marginBottom: '30px',
-                    boxShadow: '0 4px 10px rgba(0, 86, 179, 0.1)'
-                }}>
-                    Note: The IC-MEET 2026 Conference has ended. Registrations and submissions are now closed.
-                </div>
-            </div>
 
             <div className="container">
                 <div style={{ marginBottom: '40px' }}>
