@@ -5,6 +5,20 @@ import '../index.css';
 const Home = () => {
     return (
         <div className="home-page">
+            <div style={{
+                backgroundColor: '#f0f7ff',
+                color: '#0056b3',
+                padding: '12px 20px',
+                textAlign: 'center',
+                fontWeight: '500',
+                fontSize: '1.1rem',
+                borderBottom: '1px solid #cce5ff',
+                boxShadow: '0 2px 5px rgba(0,0,0,0.05)',
+                zIndex: 100,
+                position: 'relative'
+            }}>
+                Note: The IC-MEET 2026 Conference has ended. Registrations and submissions are now closed.
+            </div>
             <div className="hero">
                 <h2 style={{ fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}><span style={{ color: '#FFD700' }}>I</span>nternational <span style={{ color: '#FFD700' }}>C</span>onference on</h2>
                 <h1>Recent Trends in <span style={{ color: '#FFD700' }}>M</span>aterials, <span style={{ color: '#FFD700' }}>E</span>ngineering <br /> and <span style={{ color: '#FFD700' }}>E</span>merging <span style={{ color: '#FFD700' }}>T</span>echnology (IC-MEET 2026)</h1>
@@ -35,7 +49,7 @@ const Home = () => {
                 </div>
 
                 <div className="cta-buttons">
-                    <button className="btn btn-primary" onClick={() => window.open(callForPapers.registrationLink, '_blank')}>Register Now</button>
+                    <button className="btn btn-primary" style={{ opacity: 0.5, cursor: 'not-allowed', pointerEvents: 'none' }} disabled>Register Now</button>
                     <a href="/MEET 2026 Conference TJIT Brochure.pdf" download="IC_MEET_2026_Brochure.pdf" className="btn btn-primary" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         Download Brochure
                     </a>

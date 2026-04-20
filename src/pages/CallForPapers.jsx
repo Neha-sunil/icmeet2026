@@ -12,6 +12,23 @@ const CallForPapers = () => {
                 </div>
             </div>
 
+            <div className="container" style={{ marginTop: '30px' }}>
+                <div style={{
+                    backgroundColor: '#f0f7ff',
+                    color: '#0056b3',
+                    padding: '15px 25px',
+                    borderRadius: '10px',
+                    border: '1px solid #cce5ff',
+                    textAlign: 'center',
+                    fontWeight: '500',
+                    fontSize: '1.2rem',
+                    marginBottom: '30px',
+                    boxShadow: '0 4px 10px rgba(0, 86, 179, 0.1)'
+                }}>
+                    Note: The IC-MEET 2026 Conference has ended. Registrations and submissions are now closed.
+                </div>
+            </div>
+
             <div className="container">
                 <div style={{ marginBottom: '40px' }}>
                     <p style={{ marginBottom: '20px' }}>{callForPapers.intro}</p>
@@ -229,10 +246,7 @@ const CallForPapers = () => {
                 }}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                         <h3 style={{ marginBottom: '20px', color: 'var(--primary-blue)' }}>REGISTRATION</h3>
-                        <a 
-                            href={callForPapers.registrationLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <div 
                             className="btn btn-primary"
                             style={{
                                 display: 'inline-flex',
@@ -241,26 +255,16 @@ const CallForPapers = () => {
                                 textDecoration: 'none',
                                 padding: '15px 40px',
                                 fontSize: '1.2rem',
-                                backgroundColor: 'var(--primary-blue)',
+                                backgroundColor: '#ccc',
                                 color: 'white',
                                 borderRadius: '50px',
-                                boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-                                transition: 'all 0.3s ease',
-                                fontWeight: '600'
-                            }}
-                            onMouseOver={(e) => {
-                                e.currentTarget.style.backgroundColor = 'var(--secondary-blue)';
-                                e.currentTarget.style.transform = 'translateY(-3px)';
-                                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
-                            }}
-                            onMouseOut={(e) => {
-                                e.currentTarget.style.backgroundColor = 'var(--primary-blue)';
-                                e.currentTarget.style.transform = 'translateY(0)';
-                                e.currentTarget.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+                                fontWeight: '600',
+                                opacity: 0.8,
+                                cursor: 'not-allowed'
                             }}
                         >
                             Register Now
-                        </a>
+                        </div>
                         <p style={{ marginTop: '15px', color: 'var(--text-gray)', fontSize: '0.95rem', fontWeight: '600', textAlign: 'center' }}>
                             Click to open registration form
                         </p>
@@ -281,7 +285,7 @@ const CallForPapers = () => {
                             boxShadow: '0 4px 15px rgba(0,0,0,0.08)',
                             overflow: 'hidden'
                         }}>
-                            <img src={paymentQr} alt="Payment QR Code" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            <img src={paymentQr} alt="Payment QR Code" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'blur(8px)', opacity: 0.5 }} />
                         </div>
                         <p style={{ color: 'var(--text-gray)', fontSize: '0.95rem', fontWeight: '600', textAlign: 'center' }}>
                             Scan to complete payment
